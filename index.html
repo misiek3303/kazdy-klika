@@ -21,7 +21,7 @@
       margin: 0;
       padding: 0;
       width: 100%;
-      background-color: #74a84d;
+      background-color: #191919;
     }
 
     .row {}
@@ -32,7 +32,7 @@
       background-position: center;
       background-repeat: no-repeat;
       border-radius: 0;
-      height: 100%;
+      height: 450px;
       z-index: -1;
       color: white;
     }
@@ -101,13 +101,23 @@
     .tytul {
       color: white;
     }
+
+    .sekcja-b {
+      background-color: rgb(145, 219, 111);
+      padding-bottom: 25px;
+    }
+
+    .srodek {
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top srodek">
     <a class="navbar-brand" href="#">Klikanie</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -116,14 +126,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Strona główna <span class="sr-only"></span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#articles">Artykuły <span class="sr-only"></span></a>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#gry">Gry <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#charite">Akcje charytatywne <span class="sr-only"></span></a>
+        </li>
+
 
       </ul>
-
     </div>
   </nav>
   </div>
@@ -134,6 +150,7 @@
     <div class="col-lg-12">
       <div class="jumbotron jumbotron-fluid ">
         <center>
+          <br> <br> <br>
           <h1 class="display-4">Każdy klika</h1>
           <p class="lead">Strona o klikaniu, czyli wszystko o klikaniu, co to klikanie i gierki z klikaniem!</p>
           <p>Pobaw się i zobacz że klikanie jest cool!</p>
@@ -144,7 +161,7 @@
     </div>
   </div>
 
-  <div class="row justify-content-center sekcja-a">
+  <div class="row justify-content-center sekcja-a" id="articles">
     <div class="container">
       <div class="col-lg-12 ">
         <img src="klawiatura.jpg" alt="klawka" class="ikona align-middle ">
@@ -185,7 +202,7 @@
 
 
 
-  <div class="row padding sekcja">
+  <div class="row padding sekcja-b" id="gry">
     <div class="col-lg-12">
       <div class="container">
         <h1>Gry JavaScript</h1>
@@ -221,7 +238,7 @@
   </div>
 
 
-  <div class="row sekcja-a">
+  <div class="row sekcja-a" id="charite">
     <div class="container ">
       <center>
         <h1 class="tytul">Pomaganie przez klikanie!</h1>
@@ -276,7 +293,7 @@
   </a>
   </div>
 
-  <div class="row justify-content-center sekcja-a">
+  <div class="row justify-content-center  sekcja-a">
 
     <div class="col-lg-3">
       <p class="napis">Rafał Michalczyk <br> michalczyk.rafal@2lo.pl</p>

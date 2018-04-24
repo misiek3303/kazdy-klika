@@ -8,8 +8,8 @@
   <title>Każdy klika</title>
 
   <!-- Bootstrap CSS -->
-  <link href="bootstrap.css" rel="stylesheet" type="text/css" />
-  <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="stylesheet.css" rel="stylesheet" type="text/css" />
   <style>
     canvas {
@@ -52,6 +52,45 @@
 
     .card-img-top {
       height: 200px;
+    }
+
+    .napis {
+
+      font-size: 20px;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .czarny {
+      color: black;
+      font-size: 20px;
+    }
+
+    .sekcja {
+
+      padding-bottom: 25px;
+
+    }
+
+    .sekcja-a {
+      background-color: #191919;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .carousel-control-prev-icon {
+      background-color: black;
+      width: 35px;
+      height: 35px;
+      border-radius: 10px;
+    }
+
+    .carousel-control-next-icon {
+      background-color: black;
+      width: 35px;
+      height: 35px;
+      border-radius: 10px;
+
     }
   </style>
 </head>
@@ -99,7 +138,7 @@
 
 
 
-  <div class="row padding">
+  <div class="row padding sekcja">
     <div class="col-lg-12">
       <div class="container">
         <div class="card-deck">
@@ -133,15 +172,86 @@
   </div>
 
 
+  <div class="row sekcja-a">
+    <div class="container ">
+      <center>
+        <h5 class="napis">Pomaganie przez klikanie!</h5>
+        <br>
+        <p class="napis">Pomagaj potrzebującym poprzez akcje charytatywne prowadzone na różnych stronach internetowych. Wystarczy poświęci kilka sekund (i parę kliknięc) przez parę dni, by miec juz wpływ na los biedniejszych.
+          <br> Klikając w obrazek zostaniesz przeniesiony na stronę.
+        </p>
+      </center>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="https://www.pajacyk.pl/#index"><img class="d-block w-100" src="pajacyk.png" alt="First slide"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="czarny">Pajacyk.pl</h5>
+          <p class="czarny"></p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <a href="http://www.okruszek.org.pl/dziekujemy.php "><img class="d-block w-100" src="okruszek.png" alt="Second slide"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>okruszek.pl</h5>
+          <p>Twoje kliknięcia przekazywane są na polepszenie życia biednym.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <a href="https://psiklik.pl/zbiorka.php"><img class="d-block w-100" src="psiklik.png" alt="Third slide"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="czarny">psiklik.pl</h5>
+          <p class="czarny"></p>
+        </div>
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+
+  <div class="row justify-content-center  sekcja-a">
+
+    <div class="col-lg-3">
+      <p class="napis">Rafał Michalczyk <br> michalczyk.rafal@2lo.pl</p>
+    </div>
+    <div class="col-lg-3">
+      <p class="napis">Michał Żulicki <br> zulicki.michal@2lo.pl</p>
+
+    </div>
+    <div class="col-lg-3">
+      <p class="napis">Maciej Jakubik <br> jakubik.maciej@2lo.pl</p>
+
+    </div>
+  </div>
+  </div>
+
 
 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="jquery.js"></script>
-  <script src="bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
   <script src="popper.js"></script>
-  <script src="bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
